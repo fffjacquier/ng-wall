@@ -15,7 +15,7 @@ app.config(['$locationProvider', '$routeProvider',
                 controller: 'SearchController'
             })
             .when('/random', {
-                templateUrl: '/views/random.html',
+                templateUrl: '/views/random.php',
                 controller: 'RandomController'
             })
             .when('/all', {

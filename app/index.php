@@ -31,7 +31,7 @@ $BASE_URL = 'http://ngwall.dev/';//http://localhost:8080
     }
     .all {
         /*height: 83px;/*auto*/
-        width: 120px;
+        width: 240px;
     }
     p.all {
         padding-left: 1em;
