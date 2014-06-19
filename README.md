@@ -1,6 +1,6 @@
-Personal Project 
+# Personal Project 
 
-Learning again angularjs, php-mysql and automation tasks based on nodejs
+## Learning again angularjs, php-mysql and automation tasks based on nodejs
 
-Work in progress
+**Work in progress**
 Current mantra: 'it is probably broken, and not working'
