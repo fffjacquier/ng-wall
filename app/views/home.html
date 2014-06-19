@@ -1,0 +1,13 @@
+    <div class="bgImage">
+        <div>
+            <input type="text" ng-model="qsearch" class="qsearch searchBar" placeholder="mandoline, nez, amour, nu, temps... " />
+            <button value="search" class="searchBar bsearch">Search</button>
+        </div>
+        <ul ng-hide="qsearch === undefined || qsearch == ''">
+            <li ng-repeat="item in list | filter: qsearch" style="display:inline-block;">
+                <a href="/detail/{{item.id}}">
+                    <div class="all"><img ng-src="/{{item.src}}" alt="{{item.place}} - {{item.date}}" height="83" /></div>
+                </a>
+            </li>
+        </ul>
+    </div>

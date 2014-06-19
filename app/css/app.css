@@ -1,0 +1,16 @@
+body {
+  background-color: #fff;
+  border-top: 5px solid #3399cc;
+}
+
+html {
+  background: #fff;
+}
+
+.row {
+  border: 0px solid green;
+}
+
+ul, li {
+  list-style-type: none;
+}

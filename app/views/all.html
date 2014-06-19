@@ -1,0 +1,20 @@
+<section class="nothome">
+    <input type="text" ng-model="qsearch" class="qsearch" />
+    <select ng-model="orderProp">
+        <option value="date">Date</option>
+        <option value="place">Alphabetique</option>
+        <option value="arrond">Arrondissement</option>
+        <option value="author">Artiste</option>
+        <option value="genre">Genre</option>
+    </select>
+
+    <ul>
+        <li ng-repeat="item in list | filter: qsearch | orderBy: orderProp:reverse">
+            <a href="/detail/{{item.id}}">
+                <datetime>{{item.date}}</datetime>
+                <div class="all"><img ng-src="/{{item.src}}" alt="{{item.place}}" height="83" /></div>
+                <p class="all">{{item.place}}</p>
+            </a>
+        </li>
+    </ul>
+</section>
