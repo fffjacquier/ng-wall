@@ -1,7 +1,7 @@
     <div class="bgImage">
         <div>
-            <input type="text" ng-model="qsearch" class="qsearch searchBar" placeholder="mandoline, nez, amour, nu, temps... " />
-            <button value="search" class="searchBar bsearch">Search</button>
+            <input type="text" ng-model="qsearch" class="qsearch searchBar" placeholder="rouge, nez, femme... " />
+            <!-- <button value="search" class="searchBar bsearch">Search</button> -->
         </div>
         <ul ng-hide="qsearch === undefined || qsearch == ''">
             <li ng-repeat="item in list | filter: qsearch" style="display:inline-block;">
