@@ -1,4 +1,15 @@
 angular.module('parisApp.directives', [])
+    .directive('reloadrandom', function() {
+        return {
+            /*restrict: 'A',*/
+            template: '<a href=""><div class="all"><br/>reload 10 others?</div></a>',
+            link: function(scope, element, attrs) {
+                element.bind('click', function() {
+                    scope.$apply(attrs.reloadrandom);
+                })
+            }
+        }
+    })
 /*.directive('map', function($window, $parse) {
         var counter = 0;
         return {

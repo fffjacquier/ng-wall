@@ -29,13 +29,19 @@ $BASE_URL = 'http://ngwall.dev/';//http://localhost:8080
         max-width: 100%;
         /*padding-left: 1em;*/
     }
-    .all {
-        /*height: 83px;/*auto*/
+    .rand {
         width: 240px;
+    }
+    .all {
+        width: 120px;
     }
     p.all {
         padding-left: 1em;
         width: 40%;
+    }
+    .gridLi {
+        display: inline-block;
+        height: 177px;
     }
     .nav {
         display:inline-block;
