@@ -35,6 +35,15 @@ $BASE_URL = 'http://ngwall.dev/';//http://localhost:8080
     .all {
         width: 120px;
     }
+    .about {
+        width: 59%;
+    }
+    .about p {
+        margin: 1em 0;
+    }
+    .about h1, h2, h3 {
+        margin: 1em 0;
+    }
     p.all {
         padding-left: 1em;
         width: 40%;

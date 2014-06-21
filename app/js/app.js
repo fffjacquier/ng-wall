@@ -54,6 +54,11 @@ app.config(['$locationProvider', '$routeProvider',
     }
 ]);
 
+// create a cache for json file to speed up app, because I have only one request for all now
+/*app.factory('WallCache', function($cacheFactory) {
+    return $cacheFactory['WallData'];
+});*/
+
 Array.prototype.shuffle = function() {
     for (var j, x, i = this.length; i; j = parseInt(Math.random() * i), x = this[--i], this[i] = this[j], this[j] = x);
     return this;
