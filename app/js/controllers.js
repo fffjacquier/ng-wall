@@ -35,23 +35,23 @@ angular.module('parisApp.controllers', ['parisApp.services'])
         $scope.list = [];
         listService.getList().success(function(response) {
             $scope.list = response.list;
-
         });
 
     })
-    .controller('DetailController', function($scope, $routeParams, listService) {
-        $scope.id = $routeParams.id;
-        //console.log("id=", $scope.id);
+    .controller('DetailController', function($scope, $routeParams, list) {
 
-        listService.getList().success(function(response) {
+        $scope.id = $routeParams.id;
+        $scope.list = list;
+        /*listService.getList().success(function(response) {
             $scope.item = response.list[$scope.id - 1];
-        })
+        })*/
     })
     .controller('AboutController', function() {})
     .controller('RandomController', function($scope, listService) {
         $scope.shuffledList = [];
         listService.getList().success(function(response) {
-            //$scope.shuffledList = shuffle(response.list).slice(0, 2);
+            //
+            //$scope.shuffledList = Array.prototype.shuffle.call(response.list).slice(0, 2);
             $scope.shuffledList = response.list.shuffle().slice(0, 10);
         });
     })

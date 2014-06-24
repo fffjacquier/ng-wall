@@ -97,7 +97,7 @@ $BASE_URL = 'http://ngwall.dev/';//http://localhost:8080
 
 </head>
 
-<body>
+<body ng-controller="MainController">
 
     <header>
         <ul>
@@ -109,6 +109,7 @@ $BASE_URL = 'http://ngwall.dev/';//http://localhost:8080
         </ul>    
     </header>
     
+    <error></error>
     <div ng-view></div>
 
     <script src="http://maps.google.com/maps/api/js?v=3.exp"></script>
