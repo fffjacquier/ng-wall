@@ -1,4 +1,4 @@
-# Learning again angularjs, php-mysql and automation tasks based on nodejs
+# Learning angularjs, php-mysql and automation tasks based on nodejs
 
 **Work in progress**
 
